@@ -41,5 +41,63 @@ The encryption of file converts the file's content into cipher text which can be
 * Any version higher than: pip 21.3.1
 
 * cryptography
-    * Installation: ```pip install cryptography```
+    * Installation 01: ```pip install cryptography```
     * Installation 02: ```pip install Fernet```
+
+<hr/>
+
+## Encrypt.py
+
+### Understanding the Encrypt Code:
+
+After importing the dependencies generate the key using ```generate_key()``` method.
+```py
+key = Fernet.generate_key()
+```
+Save the key in file_key.key file.
+```py
+with open('file_key.key', 'wb') as filekey:
+        filekey.write(key)
+```
+Load the generated key with instance of Fernet class.
+```py
+fernet = Fernet(key)
+```
+Read the file that you want to encrypt.
+```py
+with open('test.txt', 'rb') as f:
+        file = f.read()
+```
+Encrypt the file using encrypt() method.
+```py
+encrypt_file = fernet.encrypt(file)
+```
+Rewrite the file with encrypted data.
+```py
+with open('your_uploadedFile.ext', 'wb') as encrypted_file:
+        encrypted_file.write(encrypt_file)```
+```
+
+<hr/>
+
+## Decrypt.py
+
+### Understanding the Decrypt Code:
+
+```py
+# read the key
+with open('file_key.key', 'rb') as filekey:
+    key = filekey.read()
+# crate instance of Fernet
+# with encryption key
+fernet = Fernet(key)
+# read the file to decrypt
+with open(fileName, 'rb') as f:
+    file = f.read()
+# decrypt the file
+decrypt_file = fernet.decrypt(file)
+# open the file and wite the encrypted data
+with open(fileName, 'wb') as decrypted_file:
+    decrypted_file.write(decrypt_file)
+print('File is decrypted')
+```
