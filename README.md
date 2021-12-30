@@ -2,7 +2,7 @@
 
 ### General Overview of the Application
 
-This program was written in .py to encrypt and decrypt files.
+The program was written in Python to encrypt and decrypt user uploaded files.
 
 <hr/>
 
@@ -23,14 +23,23 @@ Cryptography is the study of secure communications techniques that allow the sen
 
 * In this application the Python cryptography module will be used.
 
+Cryptography is a python package used for the encryption or decryption of files such as text file, document file, csv file, python file etc.
+
+Here we will be using cryptography’s fernet module to generate the encryption key and encrypt the file using encrypt() method.
+
+The encryption of file converts the file's content into cipher text which can be decrypted only by using the same encryption key.
+
 <hr/>
 
 ### Tools
 
 * Updated Text-Editor or IDE
-    * VS Code (v1.57+)
-    * IDE: PyCharm 2021.1.2+
-* Python v3.9.5+
-* pip v21.1.2+
+    * Any VS Code version higher than: 1.63.1
+    * Any PyCharm version higher than: Version: 2021.3.1
+        * Build: 213.6461.77
+* Python v3.10+
+* Any version higher than: pip 21.3.1
+
 * cryptography
     * Installation: ```pip install cryptography```
+    * Installation 02: ```pip install Fernet```
