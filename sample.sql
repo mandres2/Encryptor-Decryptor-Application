@@ -1,14 +1,1 @@
-create table ACCOUNT (
-    ACCOUNT_ID int identity not null,
-    AVAIL_BALANCE float,
-    CLOSE_DATE datetime,
-    LAST_ACTIVITY_DATE datetime,
-    OPEN_DATE datetime not null,
-    PENDING BALNCE float,
-    STATUS varchar(10),
-    CUST_ID int,
-    OPEN_BRANCH_ID int not null,
-    OPEN_EMP_ID int not null,
-    PRODUCT_CD varchar(10) not null,
-    primary key (ACCOUNT_ID)
-);
+gAAAAABhzjy_FVdP7kDLT3Ft84-kAEFvbc-9GEfeKvsE-3CYVyFirYhNaKqanyMhS1OVgzkv2kqzH7tGbY_LLzpVzJW6_WpxDvJSJLhSeyI5KvReqNhy_4TM2J0Rsa-KIkj2pxlvmECnnISClDi-lQoG4VawJY55LiMZSyrTi21R4I3gJlF1yIvcp4NJl6JXnhcAzv8ML9IjsnwGYJ-wyl7TNicZdOa4RmlK1hXadN4b5LW7IVYYdhfVNycLhcoGndOTZMprV1CXZheDAVslAwoZtKniIzbi_BdTU5cUQ2S3hrAkR5ZNWNKa0F1OsGnkl5o6Sc5n2quDmpSk4jFd11dYGz3_ZQDxtPUvVo4ZlceEBWBeGo0CP1OTxUZtCLBUdLpA_-bq1_2lLuh41rjjN_pcNGl23OaBQ0YULxMd1QPJWbO0N1Z86y3hSRm6zuEsqC5PwH13KdFAfw7SVOn3NpUHheCbrqvbDhWcsnynvYw4ycI4lXFkHlMegiDnU03Tv0h1uZwGJB0nNQEYKQZM8F-BBww8u28BjHCeE1f52yUywreiM7DxkaxgI8wKdVu0fsnHw_9jBRAPA29b27-r4Ufac0Xui7PIQQ==
